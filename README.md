@@ -34,5 +34,5 @@ makanan-favorit/
 │   └── script.js         // File JavaScript utama
 │
 ├── images/               // Folder untuk gambar
-│   └── background.jpg    // File JavaScript utama
+    └── background.jpg    // File JavaScript utama
 
