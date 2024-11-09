@@ -1,1 +1,78 @@
+/* Styling Header */
+header {
+    position: relative; /* Mengatur posisi agar pseudo-element berfungsi dengan benar */
+    background-image: url('../images/background.jpg');
+    background-size: cover; /* Menyesuaikan gambar sesuai area header */
+    background-position: center; /* Memposisikan gambar di tengah */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    padding: 20px; /* Menambah padding agar konten di dalam header terlihat baik */
+    color: white;
+    text-align: center;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Warna hitam dengan transparansi rendah */
+    z-index: 1; /* Menempatkan pseudo-element di bawah konten header */
+}
+
+header h1, header nav {
+    position: relative;
+    z-index: 2; /* Menempatkan teks di atas lapisan transparan */
+}
+
+header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Styling Footer */
+footer {
+    position: relative; /* Mengatur posisi agar pseudo-element berfungsi dengan benar */
+    background-image: url('../images/background.jpg'); /* Gunakan gambar latar belakang jika ada */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Warna hitam dengan transparansi rendah */
+    z-index: 1; /* Menempatkan pseudo-element di bawah konten footer */
+}
+
+footer p {
+    position: relative;
+    z-index: 2; /* Menempatkan teks di atas lapisan transparan */
+    font-size: 0.8em;
+}
+
+/* Styling Custom Tombol Kota */
+.custom-btn {
+    background-color: #000; /* Latar belakang hitam */
+    color: #fff; /* Warna teks putih */
+    border: 1px solid #333; /* Border hitam lebih terang */
+    transition: background-color 0.3s; /* Transisi halus untuk efek hover */
+}
+
+.custom-btn:hover {
+    background-color: #333; /* Latar belakang abu-abu gelap saat hover */
+    color: #fff; /* Warna teks tetap putih saat hover */
+}
+
+
 
